@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall Street Weather</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #0a0a0a;
+      color: #f5f2eb;
+      font-family: 'Courier New', Courier, monospace;
+      min-height: 100vh;
+      padding: 40px;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    
+    .logo {
+      font-size: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #f5f2eb;
+    }
+    
+    .controls {
+      display: flex;
+      gap: 20px;
+      font-size: 12px;
+    }
+    
+    .controls span {
+      color: #666;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    
+    .controls span:hover,
+    .controls span.active {
+      color: #f5f2eb;
+      background-color: #1a1a1a;
+    }
+    
+    .timestamp {
+      font-size: 11px;
+      color: #444;
+      text-align: right;
+      margin-bottom: 40px;
+    }
+    
+    .entity {
+      margin-bottom: 50px;
+      padding: 30px;
+      border: 1px solid #1a1a1a;
+      background-color: #0d0d0d;
+    }
+    
+    .entity-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 25px;
+    }
+    
+    .entity-name {
+      font-size: 18px;
+      letter-spacing: 3px;
+      font-weight: normal;
+    }
+    
+    .entity-updated {
+      font-size: 11px;
+      color: #444;
+    }
+    
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 25px;
+    }
+    
+    .metrics-section h3 {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #666;
+      margin-bottom: 15px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    
+    .metric-label {
+      color: #888;
+      font-size: 13px;
+    }
+    
+    .metric-value {
+      color: #f5f2eb;
+      font-size: 13px;
+    }
+    
+    .custom-metrics {
+      padding-top: 20px;
+      border-top: 1px solid #2a2a2a;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    
+    .custom-metric {
+      font-size: 12px;
+    }
+    
+    .custom-metric .label {
+      color: #555;
+    }
+    
+    .custom-metric .value {
+      color: #f5f2eb;
+      margin-left: 8px;
+    }
+    
+    .verified {
+      font-size: 10px;
+      color: #333;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .verified-badge {
+      width: 6px;
+      height: 6px;
+      background-color: #2a4a2a;
+      border-radius: 50%;
+    }
+    
+    .footer {
+      margin-top: 80px;
+      padding-top: 20px;
+      border-top: 1px solid #1a1a1a;
+      font-size: 10px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="logo">Wall Street Weather</div>
+    <div class="controls">
+      <span>shuffle</span>
+      <span>A → Z</span>
+      <span>Z → A</span>
+      <span class="active">revenue</span>
+      <span>growth</span>
+    </div>
+  </header>
+  
+  <div class="timestamp">Last refresh: 2026-02-02 06:00 UTC</div>
+  
+  <article class="entity">
+    <div class="entity-header">
+      <h2 class="entity-name">ROKU</h2>
+      <span class="entity-updated">updated 6h ago · signed by CFO</span>
+    </div>
+    
+    <div class="metrics-grid">
+      <section class="metrics-section">
+        <h3>Past Facing</h3>
+        <div class="metric-row">
+          <span class="metric-label">Revenue</span>
+          <span class="metric-value">3,900,000,000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Net Income</span>
+          <span class="metric-value">120,000,000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Gross Margin</span>
+          <span class="metric-value">44%</span>
+        </div>
+      </section>
+      
+      <section class="metrics-section">
+        <h3>Future Facing</h3>
+        <div class="metric-row">
+          <span class="metric-label">YoY Customer Growth</span>
+          <span class="metric-value">14%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">R&D % of Revenue</span>
+          <span class="metric-value">23%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Customer Retention</span>
+          <span class="metric-value">96%</span>
+        </div>
+      </section>
+    </div>
+    
+    <div class="custom-metrics">
+      <div class="custom-metric">
+        <span class="label">Active Accounts</span>
+        <span class="value">85,000,000</span>
+      </div>
+      <div class="custom-metric">
+        <span class="label">Streaming Hours</span>
+        <span class="value">32,000,000,000</span>
+      </div>
+      <div class="custom-metric">
+        <span class="label">ARPU</span>
+        <span class="value">46</span>
+      </div>
+    </div>
+    
+    <div class="verified">
+      <span class="verified-badge"></span>
+      <span>WSW verified · ed25519:f5a2...c891</span>
+    </div>
+  </article>
+  
+  <article class="entity">
+    <div class="entity-header">
+      <h2 class="entity-name">PALANTIR</h2>
+      <span class="entity-updated">updated 6h ago · signed by CEO</span>
+    </div>
+    
+    <div class="metrics-grid">
+      <section class="metrics-section">
+        <h3>Past Facing</h3>
+        <div class="metric-row">
+          <span class="metric-label">Revenue</span>
+          <span class="metric-value">2,866,000,000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Net Income</span>
+          <span class="metric-value">468,000,000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Gross Margin</span>
+          <span class="metric-value">80%</span>
+        </div>
+      </section>
+      
+      <section class="metrics-section">
+        <h3>Future Facing</h3>
+        <div class="metric-row">
+          <span class="metric-label">YoY Customer Growth</span>
+          <span class="metric-value">43%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">R&D % of Revenue</span>
+          <span class="metric-value">12%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Customer Retention</span>
+          <span class="metric-value">134%</span>
+        </div>
+      </section>
+    </div>
+    
+    <div class="custom-metrics">
+      <div class="custom-metric">
+        <span class="label">S&M Spend</span>
+        <span class="value">660,000,000</span>
+      </div>
+      <div class="custom-metric">
+        <span class="label">Customers</span>
+        <span class="value">711</span>
+      </div>
+      <div class="custom-metric">
+        <span class="label">Govt Revenue %</span>
+        <span class="value">55</span>
+      </div>
+    </div>
+    
+    <div class="verified">
+      <span class="verified-badge"></span>
+      <span>WSW verified · ed25519:a3b1...d442</span>
+    </div>
+  </article>
+  
+  <article class="entity">
+    <div class="entity-header">
+      <h2 class="entity-name">SNOWFLAKE</h2>
+      <span class="entity-updated">updated 18h ago · signed by CFO</span>
+    </div>
+    
+    <div class="metrics-grid">
+      <section class="metrics-section">
+        <h3>Past Facing</h3>
+        <div class="metric-row">
+          <span class="metric-label">Revenue</span>
+          <span class="metric-value">2,806,000,000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Net Income</span>
+          <span class="metric-value">-797,000,000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Gross Margin</span>
+          <span class="metric-value">68%</span>
+        </div>
+      </section>
+      
+      <section class="metrics-section">
+        <h3>Future Facing</h3>
+        <div class="metric-row">
+          <span class="metric-label">YoY Customer Growth</span>
+          <span class="metric-value">22%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">R&D % of Revenue</span>
+          <span class="metric-value">57%</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Customer Retention</span>
+          <span class="metric-value">131%</span>
+        </div>
+      </section>
+    </div>
+    
+    <div class="custom-metrics">
+      <div class="custom-metric">
+        <span class="label">Fortune 500 Customers</span>
+        <span class="value">691</span>
+      </div>
+      <div class="custom-metric">
+        <span class="label">Data Cloud Customers</span>
+        <span class="value">9,822</span>
+      </div>
+    </div>
+    
+    <div class="verified">
+      <span class="verified-badge"></span>
+      <span>WSW verified · ed25519:b7c3...e219</span>
+    </div>
+  </article>
+  
+  <footer class="footer">
+    <span>Open source · Public good · No accounts · No paywall</span>
+    <span>Signatures verifiable at source</span>
+  </footer>
+  
+</body>
+</html>

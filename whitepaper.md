@@ -1,0 +1,154 @@
+# Wall Street Weather
+
+**Financial Thermodynamics Shifting from Institutional Trust to Architectural Transparency**
+
+---
+
+## Abstract
+
+A free, public dashboard recording market traded entities' metrics, cryptographically signed and broadcast by economic agents. These are reported in real-time, and should be necessary for investors to make informed decisions and/or mandated by law. 
+
+Currently, investors have to rely on extensive quarterly reports, CEO narratives, and analysts' research. This becomes arduous and confusing, since often different metrics are used to rate/describe different companies. Additionally, both the CEOs and the analysts are biased in what information they present, why, and how, even when the information is truthful and the firms' information barriers work. 
+
+Furthermore, this puts investors in a bind. In certain contexts, "don't trust, verify" is a useful rule. In Wall Street, it irremediably directs the investors' attention (human and/or synthetic) to look /here/ and not /there/. In practical terms, if I tell you your fly is down and you trust, you look down. If you don't trust, you still look down. Either way, I directed your behaviour. So if you look at reports and analysis, you are inescapably manipulated. If you skip them, maybe you are being negligent, or flying blind. 
+
+Wall Street Weather aims to be a low latency, unmediated monitoring of each traded entity, communicating the live state of the markets, and intending to cut through noise with signal as much as possible.
+
+---
+
+## 1. Invisible hands and where to find them, or the myth of homeostatic correction
+
+Classical economic theory relies on the metaphor of the "Invisible Hand": a presumed force that efficiently allocates resources and corrects pricing errors. A God of sorts. 
+
+This concept stems back to Adam Smith, a man who lived with his mom all his life, never held a job other than in Academia, and lived in an England sustained by colonial commodities' extraction. It makes sense, then, that to him, Economy looked like a Divine Mystery. He didn't know how enterprises were planned, where goods came from, how they were processed, who'd buy them and why. That is to say, he wasn't aware of the political planning behind raw goods' acquisition, the orchestration and science behind manufacturing, the original realities and incentives of the places that made English surplus possible, nor the realities and incentives of the very concrete people who everyday made decisions at the bazar. Removed from all this, the market was indeed "a God" to him, and in the same situation, you'd probably have a similar perspective.
+
+However, all markets are made of people making decisions. Algorithms follow the programming of a person making a decision. If a human movement like Gamestop moves the needle of the market, algos /follow/, don't ignore. So the market is always human first, and this is good and necessary, but also dangerous if we try to deny reality by blocking out the sun with a thumb.
+
+Case in point: the LIBOR Scandal. The LIBOR scandal was a systemic conspiracy where major global banks (including Barclays, UBS, and Deutsche Bank) colluded to manipulate the London Interbank Offered Rate, the benchmark interest rate that underpinned over $350 trillion in global financial products. Because LIBOR was calculated based on estimates submitted by the banks ("at what rate /could/ you borrow") rather than actual transaction data, traders were able to submit false figures to artificially rig the rate in their favor. So it was less "science from the invisible hand" and more "gentlemen grabbing a drink at the pub at 6pm everyday". This allowed them to generate illicit profits on derivatives and make their institutions appear financially healthier than they truly were during the 2008 crisis, proving that a financial system based on "trusted consensus" rather than "verifiable proof" is inherently fraudulent and has tangible consequences.
+
+Why does the "invisible hand" myth exist? Because it's taught in Academia, and it's simple and clean. It's a soothing fairytale that guards us from uncertainty and responsibility. "The market will correct it", we say, hoping our foils and follies will melt away by closing time. Furthermore, the belief on the existence of an "invisible hand" keeps everyone from searching for a "hidden grey hand", so even when humans know or intuit that markets are complex, the incentive is to use that knowledge asymmetrically, not to reveal it. Wall Street Weather aims to remove that asymmetry.
+
+---
+
+## 2. The thing about bias
+
+The thing about bias is that it's unpreventable. To completely bypass bias, we would have to forget everything we know and have experienced, and see everything anew each time. Even if you know about biases and how they work, you still can't bypass them. You are simply more aware of the manipulation, unless you think your knowledge shields you from bias, in which case you are more vulnerable to it (bias blind spot). You simply can't ignore the inherent bias in your language (the places more weight in some ideas than in others), your history, your context, the context of the things you perceive. You can't unsee what you have seen and you can't unhear what you have heard.
+
+Will AI save us from bias? Given the fact that AI is trained with weights–the very definition of bias, I'm sorry to announce that no, AI won't save you from having to make decisions, and from being responsible for those decisions, and from the despairing marvel that is to be alive. AI is trained with all past knowledge we remember, which is in itself a sort of curation. Furthermore, AIs' training is modified by AI researchers' opinions (that they call RLHF and "good" data). Of course, each AI researcher thinks their opinion is /the/ good opinion, and so AI is a crucible of personal opinions /firmly held/ and codified as weights, rather than the Word of the Lord delivered to us in synthetic form.
+
+**Practical example: the advantage of being a FAANNG.** FAANNG companies (now FAANNA: Facebook, Amazon, Apple, Netflix, Nvidia, Google/Alphabet) are a group of historically top performing tech companies. What is the statistical chance that out of six initials, four would be on the top half of the alphabet, and that the only bottom half letter is the one at the top of the bottom (N)? Around 23%. Is this a weird accident? According to Jacobs & Hillert (2016), "Alphabetic Bias, Investor Recognition, and Trading Behavior", it's not. According to this study, stocks early in the alphabet have 5–15% higher trading activity and liquidity than those at the bottom. Why? Maybe investors (and algorithms) process lists from top to bottom, for efficiency. By the time they get to 'R', they are tired, hungry or out of money. This is called the "primacy effect". Does anyone know about it? Of course! The peeps at Google, for example (maybe). When they learned about it (maybe), instead of raising concerns about the invisible hand, they simply changed their name from Google to Alphabet (perhaps, perhaps a little too on the nose).
+
+**Another example: Roku's curious Wall Street ride.** Roku is a company nobody knows about but everyone uses. It's the something-something stuck to your TV's butt that does something-something and shows apps like Netflix. You know, one of the FAANNG. So Roku is the support layer for Netflix, a corporation analysts love. So you would think analysts love Roku, right? And you'd think wrong. Roku is the global leader of TV's OS. They are the leaders in the US, Canada and Mexico. In many countries where they are not present, the leader is a local copy of Roku. Roku has everything to be an industry darling, but it was historically downgraded and overlooked by analysts. There's a few reasons for that. The R initial. The fact that very few people understand what Roku is, what its business model is, how fundamental it is for American interests, and how amazing it is. The fact that it functions so perfectly, it's invisible.
+
+Let me explain. Remember early Twitter/X? Remember the fail whale? It was so cute! When Twitter failed, people talked about it. Missed it. Craved it. Suffered withdrawal. Its failure was a marketing campaign in and on itself. The beloved iPhone 4 was derided when it launched, most memorably due to the antenna-gate. Despite this, it had a record-breaking launch (selling 1.7M units on the first 3 days). Furthermore, the sales remained strong regardless (and perhaps thanks to) the antenna-gate: it sold 3M units in the first three weeks, and demand consistently outstripped supply for months. Friction drives attention. We love to hate Kim K. We love to hate Whole Foods. We love to hate Elon. In the end, hate is as sticky as love.
+
+Back to Roku. Roku is perfect. Always on, never fails. It's just, /there/. It just works. Nobody needs to know the composition of air to breathe, but you need a recipe if you want a cake. Air is vital, but frictionless. Cake is a desire, but it takes some work to get one. Roku is closer to air than to cake. We barely see the branding flashing before our eyes before we choose the app we'd like. And this is Roku's downfall. People choose /TV/ each time they turn the device on. People choose /Netflix/ each time they select the app. People choose /Roku/ once, in the store, probably as they buy their TV. In comparison, people choose Amazon, Facebook, Apple, many times a day. Analysts most likely choose any and all these companies many times a day. Roku kept doing each and every thing that Wall Street asked from them, sometimes at the expense of growth, innovation, and American interests. In December 2024, Roku set up a massive ad on their Times Square building. It was all over the holidays' photos and broadcasts. Suddenly, miraculously, Roku started looking better in Wall Street's eye. Maybe because suddenly, Roku was very literally in Wall Street's eyeballs. By the end of 2025, Roku's stock was growing more than 20% and analysts were warming up to it.
+
+If you ask analysts, they will tell you that EBITDA. But the reality is that even the most well meaning actors have biases. Industry people hang out, meet in parties, grab a drink at the pub at 6pm, and that doesn't always mean corruption. It just means reality, and no amount of algorithms and AI will bypass it.
+
+---
+
+## 3. The data and the metrics tell the story
+
+If you ask analysts, they will tell you that EBITDA. Unless they want to make a different point—then they'll tell you that Revenue, PEG, Operating Margin, ROA, Working Capital, MAU/DAU, Asset Turnover, Beta, Market Cap, Non-GAAP Earnings, Pro Forma Revenue, or whatever else supports the narrative they have already chosen, whether consciously or subconsciously.
+
+This is called Efficient Coding Hypothesis in neuroscience. The brain is a reduction valve (Aldous Huxley). Its job isn't to show you the truth; its job is to hide 99% of the truth so you don't go insane. Its job isn't to tell you the truth because there isn't /a/ Truth. There's many truths. There's as many truths as there are perceptions, and perceptions are informed by our senses, our emotions, our history, our language, our values, our identity, the movie you saw on the weekend, the luminosity in the room you are in and the color of the walls, the time of the day, and breakfast, among other things. In a chaotic system, these are initial conditions. If an analyst is hungry (low blood sugar), they are statistically more likely to be risk-averse. If they just watched a war movie, they might be more bearish. Financial analysis might have some math in it, but that math is swimming in a lot of bio-chemistry.
+
+That's why calling it cherry-picking data is flawed. The concept of "cherry-picking" assumes that there's conscious choice every time, that there's a possibility of unbiased choice, and that there's a truth, or a perfect spread of cherries to be selected. Let's say we perfectly select a pool of perfectly performing securities. The very act of choosing this pool of perfectly performing securities impacts these very securities and the market, therefore impacting their performance, whether positively or negatively. In finance, this is called reflexivity. In physics, it's called the observer effect.
+
+Only babies see everything. Alison Gopnik, a developmental psychologist, calls this lantern consciousness (vs. spotlight consciousness.) Babies have the lantern: they see the dust particles, the lights, the ceiling, the face, all at once. Adults have the spotlight: we only see what we need to see to survive). It would be easy to say "analysts are liars". But analysts are adults, and being an adult means ignoring parts of reality to focus on your personal Truth, your perception. No AI can bypass this, in AI more data isn't equal to better outputs, sometimes it means the opposite.
+
+We cannot ever find One Truth, but we can aim to be honest: to bridge the gap between you and me, between data and narrative, as best as we can, while also being transparent about our shortcomings. Currently we have quarterly data dumps packed in narrative, the CEOs narrative, and the analyst's narrative. Most narratives are constructed to support personal preferences and past choices (if I short company A I'm more likely to find evidence that backs this short). I propose that we build something that will cut through the noise and will give investors the power to make financial decisions according to their own perspective—sovereignly.
+
+---
+
+## 4. Reconciling Shannon and Bayes
+
+If information is the resolution of uncertainty then we are all ignorant or dead. There can always be more data, things can always change, you can always find out later you missed something. If information is the resolution of uncertainty, then information is a choice. It's the choice to decide the scope of a scientific study or the scope of a software release version. At some point you need to choose when enough is, well, enough, and decide.
+
+Maybe information is the reduction of uncertainty. Maybe it's both.
+
+Maybe it's Bayes.
+
+Sometimes it would seem like rationalists treat Bayes as 0/1 switch, and Bayes would be dismayed. Probability is not a switch, it's a gradient. Treating 90% probability as fact is the quickest way to be wrong. 0.1/0.9 is more like it. Updating your assumptions continuously is the way to go.
+
+This is to say, they are both correct. Shannon is right: at some point, you have to resolve. You trust the "sent" message in your app unless something goes wrong that makes you change your mind. And there's a chance > 0 that something went wrong. But you resolve–not because it's perfect, but because it's good enough.
+
+Bayes is correct, nothing is ever certain, and everything may be updated.
+
+Analysts with their reports and corps with their 500-page dump are optimizing for data and in their dutifulness, are desinforming. The hundreds of metrics used support any narrative of the future and any narrative of the past. The reality is that even the people running a company at any point in time don't have a 1.0 certainty of how everything will go because chaos is part of reality. The deluge of details then becomes obscuring and it gets in between the CEOs' ability to do their job, the corps' sovereignty, and the individual investor's will to be part of the American enterprise and the American project.
+
+---
+
+## 5. An unhackable, high trust, high signal, cryptographically secure telemetric surface
+
+**Unhackable.** Because it's completely public, there's nothing to steal. It can be shut down, of course, and that means that we need to plan for decentralized backups so that if the surface gets compromised, it can be regenerated or restored as fast as possible.
+
+**High trust.** Because it's simple and transparent, everything in it and about it is signal. If a corporation signs up, it's a signal (probably alignment with transparency and accountability and a need to own their narrative). If they opt out, it's a signal (maybe that they are later adopters, don't trust open source, or prefer to avoid attention). If they are prompt in keeping the metrics updated, it's a signal. If they choose to be defined only by a few metrics, it's a signal. If they choose metric saturation, it's a signal. You can trust the activity (and the no-activity) in the dashboard because the activity on itself (not just the metric) is the signal. You are not trusting the person nor the entity. You are trusting that everything they do, tells you something real. Maybe it's a warrant canary or a north star.
+
+**High signal.** Consonants are the /most significant bits/ of a word. You could say they are the /first principles/ of a word. A mind can deduce the word from the wrd. While LSB can be used to hide secrets, consonants encode information losslessly and legibly. Etymology is the opposite of this. Instead of being the most significant bits of a /signifier/, they are the underlying narratives behind it. They tell the history of the word. WSW means to be the consonants of the finance world. While climate is a long term narrative carrying notions from the past and announcing future forecasts, weather is a physical fact happening right now (62° and sunny). We don't mean to compete with analysts nor with quarterly reports. We mean to be something that doesn't quite exist: compressed yet meaningful financial data stripped from logos and narratives, updated regularly (low latency).
+
+**Cryptographically secure.** We use a triple-signature system. Each entity has a crown key (the institution), and each agent has a hand key that is vouched for by the crown. When data passes through Wall Street Weather, it receives a third signature confirming verification. That way we verify the source (e.g. "Tesla, Inc."), verify the intent ("CFO"), and verify passage through the system. This ensures non-repudiation: everything declared on WSW is signed and immutable.
+
+**Telemetric.** LIBOR died in 2023 (finally), and it has been replaced by SOFR. Unlike LIBOR, which was /opinions/, SOFR is a secured, overnight rate based on actual, observable transactions. WSW means to be that: a constant, low latency stream that measures the key performance metrics of a company.
+
+**Surface.** A surface is thin, 2D, minimal. It has no place for branding and also it has no space for reporting. It has only space for integers and booleans. It's the visual representation of Shannon information: pure uncertainty reduction.
+
+---
+
+## 6. Incentives
+
+**Who would want this?** Sovereign corporations would want this. Sovereign investors would want this. Because we disintermediate information, we make it accessible to investors. This takes power away from activist shareholders and analysts, who blackmail corps into doing their bidding, and back to corporations and real market agents, therefore returning to the exchange the possibility that its original goal (capitalizing companies and allowing for everyone to share on the fruits of capitalism) might be realized again.
+
+Currently: `Corp → PDF → Scraper → Analyst → Public`
+
+Wall Street Weather: `Corp → Telemetric Surface → Public`
+
+WSW might alarm analysts, big firms, data brokers and financial gatekeepers but it's not supposed to replace anyone. Rather, it's supposed to fill a space between the entities' quarterly reports. It's a microphone for CEOs to regain speech and a transparent broadcast for investors to regain independence. Should we allow gated terminals to exist? Of course. Should individuals have to pay $24k or more just to make informed investing decisions? Maybe not. Maybe it's extortionate and prejudicial to place such a burden on market access.
+
+**The best intentions.** Bitcoin was conceived to enable small transactions in a p2p, inexpensive way. Instead it's developed into a speculative mechanism to hold large amounts of money, the transactions mostly happen through an exchange and the transactions themselves are costly and resource intensive. Bitcoin was worth pursuing and it has become proof that a stateless currency can exist. It's also proof that the purest actors with the best intentions can, if too idealistic or with incentives unchecked, end up building something very different than they intended. That's why, even though I have a pretty clear idea of what WSW should look like, I think we should decide together how to build this and how to maintain it.
+
+---
+
+## 7. The design
+
+WSW should be free and open source. No sign in to use it. You go to the website and it's on. The attack surface shrinks when there's nothing to capture. No accounts means no user data to hack nor subpoena. No paywall means no revenue stream to acquire and no incentives for the org to poison the system. No company means no board to infiltrate.
+
+However, to avoid the power void to be filled there needs to be a priest. A Jon Postel figure. A longer Satoshi. Someone who allows the structure to gain robustness before someone tries to coopt it. The priest stewards the architecture—maintains the aggregator, ensures the pipes work—but cannot touch the data that flows through them. If the priest is compromised, anyone can fork.
+
+The WSW surface should be simple and stripped of overt design that might drive attention to one area of the screen over another. To avoid the alphabetical bias, the order refreshes each time the app reloads, with toggles to reorganize the list A-Z, Z-A, or by any metric.
+
+Black and cream. No colors. No logos. Integers, not abbreviations. The data is the data.
+
+---
+
+## Technical Specification
+
+See [SPEC.md](SPEC.md) for the complete technical specification including:
+
+- Key hierarchy (crown keys, hand keys, WSW counter-signature)
+- JSON schema
+- Data flow architecture
+- Verification protocol
+- Governance model
+
+---
+
+## Open Questions
+
+- Who hosts the mirrors
+- Exact signing library implementation
+- Entity onboarding ceremony details
+- First adopters
+
+These resolve during implementation, not before.
+
+---
+
+## Status
+
+Spec complete. Seeking builders.
+
+---
+
+*Technical schema developed with Claude (Anthropic)*
